@@ -1,8 +1,7 @@
 // eslint-disable-next-line
 import React from "react"
-import styled from '@emotion/styled'
-import { Link } from 'gatsby'
-import { color, typography, breakPoint } from '../styles/constans'
+import { styled } from '@linaria/react'
+import { color, typography } from '../styles/constans'
 
 const Burger = ({ open, setOpen }) => {
 

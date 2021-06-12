@@ -1,6 +1,6 @@
 // eslint-disable-next-line
-import React, { useState } from 'react';
-import styled from '@emotion/styled'
+import React, { useState } from 'react'
+import { styled } from '@linaria/react'
 import { Link, StaticQuery, graphql } from 'gatsby'
 import { color, typography, breakPoint } from '../styles/constans'
 import useMedia from 'use-media';

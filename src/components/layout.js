@@ -1,10 +1,10 @@
 import React from 'react'
 import Header from './header'
 import Footer from './footer'
-import { Global, css } from '@emotion/react'
+import { styled } from '@linaria/react'
+import { css } from '@linaria/core'
 import { color, contentWidth } from '../styles/constans'
 import '../styles/destyle.css'
-import styled from '@emotion/styled'
 import "@fontsource/noto-sans-jp"
 
 const Layout = ( props ) => {
@@ -21,22 +21,24 @@ const Layout = ( props ) => {
     )
 }
 
-const global = css`
-    html{
-    background: ${color.white};
-    color: ${color.text.high};
-    font-family: 'Noto Sans JP', sans-serif;
-    }
+export default Layout
 
-    body{
-        padding: 0 16px;
-        @media (min-width: ${contentWidth}) {
-            padding: 0;
+const Global = css`
+  :global() {
+    html{
+        background: ${color.white};
+        color: ${color.text.high};
+        font-family: 'Noto Sans JP', sans-serif;
+        }
+
+        body{
+            padding: 0 16px;
+            @media (min-width: ${contentWidth}) {
+                padding: 0;
+            }
         }
     }
-`
-
-export default Layout
+`;
 
 const Main = styled.main`
     margin: auto;

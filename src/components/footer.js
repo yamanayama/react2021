@@ -1,5 +1,6 @@
+// eslint-disable-next-line
 import React from 'react'
-import styled from '@emotion/styled'
+import { styled } from '@linaria/react'
 import { StaticQuery, graphql } from 'gatsby'
 import { color, typography } from '../styles/constans'
 
@@ -28,7 +29,7 @@ const Footer = () => {
 export default Footer
 
 const Foot = styled.footer`
-    border-top: 1px solid ${color.text.base};
+    border-top: 1px solid ${color.text.high};
     font-size: ${typography.fontSize.body2}px;
     padding-top: 16px;
     margin-top: 16px;

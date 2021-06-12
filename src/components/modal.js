@@ -1,7 +1,7 @@
 // eslint-disable-next-line
-import React, { useState } from 'react';
-import styled from '@emotion/styled'
-import { color, typography, breakPoint } from '../styles/constans'
+import React from 'react'
+import { styled } from '@linaria/react'
+import { color, typography } from '../styles/constans'
 
 
 const Modal = (props) => {
