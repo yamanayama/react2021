@@ -1,6 +1,6 @@
 // eslint-disable-next-line
 import React from 'react'
-import { styled } from '@linaria/react'
+import styled from '@emotion/styled'
 import { color, typography } from '../styles/constans'
 
 

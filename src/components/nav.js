@@ -1,5 +1,6 @@
+// eslint-disable-next-line
 import React from "react"
-import { styled } from '@linaria/react'
+import styled from '@emotion/styled'
 import { Link } from 'gatsby'
 import { color, typography, breakPoint } from '../styles/constans'
 
@@ -14,10 +15,7 @@ const Nav = ({ open, setOpen }) => {
                         <Link to="/">top</Link>
                     </ListItem>
                     <ListItem>
-                        <Link to="/about">about</Link>
-                    </ListItem>
-                    <ListItem>
-                        <Link to="/work">work</Link>
+                        <Link to="/reactSample">react sample</Link>
                     </ListItem>
                 </List>
             </Navi>

@@ -1,6 +1,6 @@
 // eslint-disable-next-line
 import React, { useState } from "react";
-import { styled } from '@linaria/react';
+import styled from '@emotion/styled';
 import Layout from "../components/layout.js"
 import Lottie from "react-lottie";
 import heroAnimation from "../animation/heroillust.json";

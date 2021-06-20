@@ -1,8 +1,9 @@
+// eslint-disable-next-line
 import React from 'react'
 import Header from './header'
 import Footer from './footer'
-import { styled } from '@linaria/react'
-import { css } from '@linaria/core'
+import { Global, css } from '@emotion/react'
+import styled from "@emotion/styled"
 import { color, contentWidth } from '../styles/constans'
 import '../styles/destyle.css'
 import "@fontsource/noto-sans-jp"
@@ -11,11 +12,11 @@ const Layout = ( props ) => {
     return (
         <>
             <Global styles={global}/>
-                <Main>
-                    <Header/>
-                        { props.children }
-                    <Footer/>
-                </Main>
+            <Main>
+                <Header/>
+                    { props.children }
+                <Footer/>
+            </Main>
         </>
 
     )
@@ -23,7 +24,7 @@ const Layout = ( props ) => {
 
 export default Layout
 
-const Global = css`
+const global = css`
   :global() {
     html{
         background: ${color.white};
