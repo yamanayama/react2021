@@ -6,7 +6,7 @@
 
 module.exports = {
   siteMetadata: {
-    title: "naomu",
+    title: "naomu React Test",
     author: "murakami naomi",
     category: ["UI", "CSS-in-JS", "React"],
     user: { name: "me", email: "me@example.com" },
@@ -23,10 +23,5 @@ module.exports = {
         cssPropOptimization: true,
       },
     },
-  ],
-  "presets": [
-    "@babel/preset-env",
-    "@babel/preset-react",
-    "@linaria"
   ],
 }
