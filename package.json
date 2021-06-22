@@ -23,6 +23,7 @@
     "react": "^17.0.1",
     "react-dom": "16.8.3",
     "react-lottie": "^1.2.3",
+    "react-transition-group": "^4.4.2",
     "use-media": "^1.4.0"
   },
   "devDependencies": {
