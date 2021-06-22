@@ -46,6 +46,7 @@ const ListItem = styled.li`
     border-radius: 4px;
     padding: 0.25rem 0.5rem;
     text-transform: capitalize;
+    
     &:hover{
         background: ${color.blue[50]};
     }
@@ -59,6 +60,7 @@ const Navi = styled.nav`
     top: 64px;
     transform: translateX(-50%);
     z-index: 2;
+
     @media (min-width: ${breakPoint}) {
         position: initial;
     }

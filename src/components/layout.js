@@ -44,4 +44,6 @@ const global = css`
 const Main = styled.main`
     margin: auto;
     max-width: ${contentWidth};
+    width: 100%;
+    padding: 0 16px;
 `

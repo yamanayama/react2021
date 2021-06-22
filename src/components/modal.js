@@ -1,7 +1,7 @@
 // eslint-disable-next-line
 import React from 'react'
 import styled from '@emotion/styled'
-import { color, typography } from '../styles/constans'
+import { color, typography, breakPoint } from '../styles/constans'
 
 
 const Modal = (props) => {
@@ -26,7 +26,7 @@ const Modal = (props) => {
 
 export default Modal
 
-const Overlay = styled.div `
+const Overlay = styled.div`
     align-items: center;
     background: rgba(0,0,0,0.6);
     display: flex;
@@ -42,12 +42,20 @@ const Main = styled.div`
     background: ${color.gray[50]};
     border-radius: 8px;
     margin: auto;
-    max-width: 600px;
     padding: 24px;
     position: relative;
     text-align: left;
-    width: 100%;
+    width: calc(100% - 32px);
     margin: 16px;
+
+    @media (min-width: ${breakPoint}) {
+        display: flex;
+        font-size: ${typography.fontSize.body2}px;
+        flex-shrink: 0;
+        margin-left: auto;
+        max-width: 600px;
+        padding: 0;
+    }
 `;
 
 const CloseButton = styled.button`
