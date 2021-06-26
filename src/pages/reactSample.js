@@ -25,7 +25,7 @@ const ReactSample = () => {
             </Wrap>
             <Wrap>
                 <H2>Modal</H2>
-                <button onClick={openModal}>modal open</button>
+                <button onClick={openModal}>モーダルが開きます</button>
                 <Modal showFlag={showModal} setShowModal={setShowModal}title="タイトルよ" discription="つれづれなるまゝに、日暮らし、硯にむかひて、心にうつりゆくよしなし事を、そこはかとなく書きつくれば、あやしうこそものぐるほしけれ。（Wikipediaより）"/>
             </Wrap>
             <Wrap>

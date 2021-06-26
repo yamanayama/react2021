@@ -49,12 +49,7 @@ const Main = styled.div`
     margin: 16px;
 
     @media (min-width: ${breakPoint}) {
-        display: flex;
-        font-size: ${typography.fontSize.body2}px;
-        flex-shrink: 0;
-        margin-left: auto;
         max-width: 600px;
-        padding: 0;
     }
 `;
 
