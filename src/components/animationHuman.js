@@ -1,11 +1,13 @@
 // eslint-disable-next-line
-import React from "react"
+import React, { useState } from "react"
 import styled from '@emotion/styled'
 import Lottie from "react-lottie"
 import { breakPoint, typography } from '../styles/constans'
 import animationData from "../animation/heroillust.json"
 
 export const AnimationHuman = () => {
+  const [stop, setStop] = useState(true);
+
   const defaultOptions = {
     loop: true,
     autoplay: true,
@@ -18,7 +20,18 @@ export const AnimationHuman = () => {
   return (
       <>
         <LottieWrap>
-          <Lottie options={defaultOptions} height={500} width={500} />
+            <Lottie
+              options={defaultOptions}
+              isStopped={stop}
+              isClickToPauseDisabled={true}
+              ariaRole={''}
+              eventListeners={[
+                {
+                  eventName: 'complete',
+                  callback: () => setStop(true),
+                },
+              ]}
+            />
         </LottieWrap>
       </>
   )
@@ -30,11 +43,7 @@ const LottieWrap = styled.div`
   width: 100%;
 
   @media (min-width: ${breakPoint}) {
-    display: flex;
-    font-size: ${typography.fontSize.body2}px;
-    flex-shrink: 0;
-    margin-left: auto;
-    padding: 0;
-    max-width: 600px;
+    max-width: 680px;
+    width: 100%;
   }
 `;
