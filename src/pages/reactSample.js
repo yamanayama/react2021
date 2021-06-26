@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import styled from '@emotion/styled';
 import Layout from "../components/layout.js"
 import { AnimationHuman }  from "../components/animationHuman.js"
-import { color, contentWidth, typography } from '../styles/constans'
+import { contentWidth, typography } from '../styles/constans'
 import Modal from "../components/modal.js"
 import Tab from "../components/tab.js"
 
@@ -42,13 +42,6 @@ export default ReactSample
 
 const H2 = styled.h2`
   font-size: ${typography.fontSize.headline5}px;
-`;
-
-const LottieWrap = styled.div`
-  height: auto;
-  max-width: 600px;
-  margin: auto;
-  width: 100%;
 `;
 
 const Wrap = styled.div`
