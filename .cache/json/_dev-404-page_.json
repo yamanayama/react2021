@@ -1,1 +1,1 @@
-{"data":{"allSiteFunction":{"nodes":[{"functionRoute":"FAKE"}]},"allSitePage":{"nodes":[{"path":"/404.html"},{"path":"/404/"},{"path":"/about/"},{"path":"/"},{"path":"/reactSample/"}]}},"pageContext":{}}
+{"data":{"allSiteFunction":{"nodes":[{"functionRoute":"FAKE"}]},"allSitePage":{"nodes":[{"path":"/404.html"},{"path":"/404/"},{"path":"/about/"},{"path":"/"},{"path":"/reactSample/"},{"path":"/transitionSample/"}]}},"pageContext":{}}

@@ -6,6 +6,7 @@ exports.components = {
   "component---src-pages-404-js": () => import("./../../../src/pages/404.js" /* webpackChunkName: "component---src-pages-404-js" */),
   "component---src-pages-about-js": () => import("./../../../src/pages/about.js" /* webpackChunkName: "component---src-pages-about-js" */),
   "component---src-pages-index-js": () => import("./../../../src/pages/index.js" /* webpackChunkName: "component---src-pages-index-js" */),
-  "component---src-pages-react-sample-js": () => import("./../../../src/pages/reactSample.js" /* webpackChunkName: "component---src-pages-react-sample-js" */)
+  "component---src-pages-react-sample-js": () => import("./../../../src/pages/reactSample.js" /* webpackChunkName: "component---src-pages-react-sample-js" */),
+  "component---src-pages-transition-sample-js": () => import("./../../../src/pages/transitionSample.js" /* webpackChunkName: "component---src-pages-transition-sample-js" */)
 }
 
