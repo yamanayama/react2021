@@ -1,12 +1,13 @@
 // eslint-disable-next-line
-import React, { useState } from "react"
+import React, { useContext } from "react"
 import styled from '@emotion/styled'
 import Lottie from "react-lottie"
 import { breakPoint, typography } from '../styles/constans'
 import animationData from "../animation/heroillust.json"
+import { AnimationContext } from './AnimationContext'
 
 export const AnimationHuman = () => {
-  const [stop, setStop] = useState(true);
+  const [stop, setStop] = useContext(AnimationContext);
 
   const defaultOptions = {
     loop: true,
@@ -27,9 +28,13 @@ export const AnimationHuman = () => {
               ariaRole={''}
               eventListeners={[
                 {
-                  eventName: 'complete',
-                  callback: () => setStop(true),
-                },
+                  eventName: 'start',
+                  callback: obj => {
+                    if (stop === true) {
+                      setStop(!stop);
+                    }
+                  }
+                }
               ]}
             />
         </LottieWrap>

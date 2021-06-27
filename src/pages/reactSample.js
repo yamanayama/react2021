@@ -6,7 +6,7 @@ import { AnimationHuman }  from "../components/animationHuman.js"
 import { contentWidth, typography } from '../styles/constans'
 import Modal from "../components/modal.js"
 import Tab from "../components/tab.js"
-
+import { AnimationContextProvider } from "../components/animationContext.js"
 
 const ReactSample = () => {
     const [showModal, setShowModal] = useState(false);
@@ -18,7 +18,9 @@ const ReactSample = () => {
     return (
         <>
           <Layout>
-            <AnimationHuman />
+            <AnimationContextProvider>
+                <AnimationHuman />
+            </AnimationContextProvider>
             <Wrap>
                 <H2>Drawer</H2>
                 <p>スマホサイズで右上からどうぞ！</p>
