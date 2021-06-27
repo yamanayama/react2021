@@ -7,10 +7,8 @@ import { Transition } from 'react-transition-group'
 import { color, typography } from '../styles/constans'
 
 const TransitionSample = () => {
-  // animationの状態を持つのにstateが必要。ここだけは面倒だけどしょうがない
   const [animate, setAnimate] = useState(false)
 
-  // ボタンを押したらtrueになって3000ms後にfalseになるように仕組む
   const doAnimate = useCallback(() => {
     setAnimate(true)
     setTimeout(() => {
