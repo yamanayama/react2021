@@ -18,9 +18,12 @@ const ReactSample = () => {
     return (
         <>
           <Layout>
-            <AnimationContextProvider>
-                <AnimationHuman />
-            </AnimationContextProvider>
+            <Wrap>
+              <H2>useContextとLottie</H2>
+              <AnimationContextProvider>
+                  <AnimationHuman />
+              </AnimationContextProvider>
+            </Wrap>
             <Wrap>
                 <H2>Drawer</H2>
                 <p>スマホサイズで右上からどうぞ！</p>
