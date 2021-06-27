@@ -5,23 +5,26 @@ import { Link } from 'gatsby'
 import { color, typography, breakPoint } from '../styles/constans'
 
 const Nav = ({ open, setOpen }) => {
- 
-  return (
-    <>
-        { open && (
-             <Navi>
-                <List>
-                    <ListItem>
-                        <Link to="/">top</Link>
-                    </ListItem>
-                    <ListItem>
-                        <Link to="/reactSample">react sample</Link>
-                    </ListItem>
-                </List>
-            </Navi>
-        )}
-    </>
-  )
+
+    return (
+        <>
+            {open && (
+                <Navi>
+                    <List>
+                        <ListItem>
+                            <Link to="/">top</Link>
+                        </ListItem>
+                        <ListItem>
+                            <Link to="/reactSample">react sample</Link>
+                        </ListItem>
+                        <ListItem>
+                            <Link to="/transitionSample">transition sample</Link>
+                        </ListItem>
+                    </List>
+                </Navi>
+            )}
+        </>
+    )
 }
 
 export default Nav
@@ -31,7 +34,6 @@ const List = styled.ul`
         props.open ? 'none' : 'block'
     };
     font-size: ${typography.fontSize.headline4}px;
-    transition: all .3s ease-in-out;
 
     @media (min-width: ${breakPoint}) {
         display: flex;
@@ -44,8 +46,9 @@ const List = styled.ul`
 
 const ListItem = styled.li`
     border-radius: 4px;
-    padding: 0.25rem 0.5rem;
+    padding: 8px;
     text-transform: capitalize;
+    line-height: 1.5;
     
     &:hover{
         background: ${color.blue[50]};
@@ -59,10 +62,12 @@ const Navi = styled.nav`
     text-align: center;
     top: 64px;
     transform: translateX(-50%);
+    width: 100%;
     z-index: 2;
 
     @media (min-width: ${breakPoint}) {
         position: initial;
+        width: initial;
     }
 `;
 
