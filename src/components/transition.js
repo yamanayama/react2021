@@ -8,8 +8,7 @@ const TransitionTest = ({ state }) => {
   return (
       <Wrapper>
         今のStateは{state}だよ
-        <Animation state={state}>
-        </Animation>
+        <Animation state={state} />
       </Wrapper>
     )
 }

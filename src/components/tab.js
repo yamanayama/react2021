@@ -73,7 +73,6 @@ const Tab = () => {
 
 export default Tab
 
-
 const TabWrapper = styled.div`
   margin: auto;
   max-width: 700px;
