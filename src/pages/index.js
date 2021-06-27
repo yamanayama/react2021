@@ -4,7 +4,8 @@ import styled from '@emotion/styled'
 import Layout from "../components/layout.js"
 import { AnimationHuman }  from "../components/animationHuman.js"
 import { graphql } from 'gatsby'
-import { color, contentWidth, typography } from '../styles/constans'
+import { typography } from '../styles/constans'
+import { AnimationContextProvider } from "../components/animationContext.js"
 
 const Home = ({ data }) => {
   return (
@@ -12,7 +13,9 @@ const Home = ({ data }) => {
           <Layout>
             <H1>{data.site.siteMetadata.title}</H1>
             <p>Reactのコードサンプルを置いています</p>
-              <AnimationHuman />
+              <AnimationContextProvider>
+                <AnimationHuman />
+              </AnimationContextProvider>
           </Layout>
       </div>
   )
